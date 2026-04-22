@@ -1,0 +1,19 @@
+inputSet:
+  name: input4
+  identifier: input4
+  orgIdentifier: default
+  projectIdentifier: demo1
+  pipeline:
+    identifier: tempinputsetbranch
+    stages:
+      - stage:
+          identifier: stage1
+          type: Custom
+          spec:
+            execution:
+              steps:
+                - step:
+                    identifier: Wait_1
+                    type: Wait
+                    spec:
+                      duration: 10s
